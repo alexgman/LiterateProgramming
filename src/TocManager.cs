@@ -137,9 +137,8 @@ namespace LiterateProgramming
 		*/
 		public void Save ()
 		{
-			if (_filename == null)
-				throw new InvalidOperationException ("No filename set.");
-			if (_addedSections == null || _addedSections.Count == 0)
+			if (_filename == null || _addedSections == null || 
+				_addedSections.Count == 0)
 				return;
 			using (var output = File.AppendText (_filename))
 				foreach (var section in _addedSections)
