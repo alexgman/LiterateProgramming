@@ -42,6 +42,9 @@ below. The columns indicate if a parameter is supported by a specific template.
 | --------------------- |:---------:|:--------:|
 | ProjectName           |     *     |     *    |
 | GitHub                |     *     |     *    |
+| Download              |     *     |     *    |
+| NuGet                 |     *     |     *    |
+| License               |     *     |     *    |
 | Footer                |     *     |     *    |
 | MarkdownStyle         |     *     |          |
 | ShowDescriptionInToc  |     *     |          |
@@ -66,6 +69,22 @@ The name of the project that is shown in the toolbar of the HTML pages.
 ### `GitHub` (URL)
 
 The URL of the project in GitHub. The link is shown as a button in the toolbar.
+
+### `Download` (URL)
+
+The URL of the project download page. The link is shown as a button in the 
+toolbar.
+
+### `NuGet` (URL)
+
+The URL of the project NuGet page. The link is shown as a button in the 
+toolbar.
+
+### `License` (string)
+
+The name of the license file with the relative path and extension. The license 
+file is assumed to be located under the project directory. The link is shown as 
+a button in the toolbar.
 
 ### `Footer` (string)
 
