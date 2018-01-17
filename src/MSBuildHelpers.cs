@@ -88,7 +88,7 @@ namespace LiterateProgramming
 				/*
 				And then we can add the "normal" references.
 				*/
-				p = AddReferences (p, projRoot, refAssyDir, solutionDir);
+				p = AddReferences (p, projRoot, refAssyDir);
 				/*
 				Finally we can compile the project and yield it out for enumeration. 
 				If there are compilation errors, they will be outputted to the console 
@@ -110,9 +110,10 @@ namespace LiterateProgramming
 		determine where the corresponding assemblies are located on disk.
 		*/
 		private static Project AddReferences (Project proj, ProjectRootElement projRoot, 
-			string refAssyDir, string solutionDir)
+			string refAssyDir)
 		{
 			var references = projRoot.Items.Where (i => i.ItemType == "Reference");
+			var projectDir = Path.GetDirectoryName (proj.FilePath);
 			foreach (var reference in references)
 			{
 				/*
@@ -127,7 +128,7 @@ namespace LiterateProgramming
 					AddMetadataReference (ref proj,
 						Path.IsPathRooted (hintPath.Value) ?
 							hintPath.Value :
-							Path.Combine (solutionDir, hintPath.Value));
+							Path.Combine (projectDir, hintPath.Value));
 				/* 
 				When no hint path is defined, we assume that the assembly
 				is part of .NET framework and can be found in the reference 
