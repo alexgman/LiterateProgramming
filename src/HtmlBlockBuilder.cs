@@ -208,7 +208,7 @@ namespace LiterateProgramming
 			if (symbol != null &&
 				(node is MemberDeclarationSyntax || node is VariableDeclaratorSyntax))
 			{
-				var symbolStr = symbol.ToString ();
+				var symbolStr = GetSymbolId (symbol);
 				if (!_ids.Contains (symbolStr))
 				{
 					_ids.Add (symbolStr);
@@ -231,7 +231,35 @@ namespace LiterateProgramming
 				sref.SyntaxTree.FilePath);
 			return Path.Combine (file.RelativeFileRoot,
 				file.ChangeExtension ("html").FilePath).Replace ('\\', '/') +
-				"#" + symbol.ToString ();
+				"#" + GetSymbolId (symbol);
+		}
+		/*
+		To generate the link Id from the symbol we use `ToDisplayString` method,
+		that let's you specify in great detail which parts of the symbol included 
+		in the result. We just need to make sure that the Id is unique, so we 
+		pick the parts that distinguish the symbol from the others. We always 
+		use the original definition of the symbol. This means that if a symbol 
+		is an instantiation of generic type or method, we refer to its definition 
+		instead of the specific instance.
+		*/
+		private static SymbolDisplayFormat _symbolDisplayFormat =
+			new SymbolDisplayFormat (
+				SymbolDisplayGlobalNamespaceStyle.Omitted,
+				SymbolDisplayTypeQualificationStyle.NameAndContainingTypesAndNamespaces,
+				SymbolDisplayGenericsOptions.IncludeTypeParameters,
+				SymbolDisplayMemberOptions.IncludeContainingType | 
+					SymbolDisplayMemberOptions.IncludeParameters,
+				SymbolDisplayDelegateStyle.NameAndSignature,
+				SymbolDisplayExtensionMethodStyle.StaticMethod,
+				SymbolDisplayParameterOptions.IncludeType,
+				SymbolDisplayPropertyStyle.NameOnly,
+				SymbolDisplayLocalOptions.None,
+				SymbolDisplayKindOptions.None,
+				SymbolDisplayMiscellaneousOptions.UseSpecialTypes);
+
+		private string GetSymbolId (ISymbol symbol)
+		{
+			return symbol.OriginalDefinition.ToDisplayString (_symbolDisplayFormat);
 		}
 		/*
 		Tooltip is a handy way for showing additional information in code blocks 

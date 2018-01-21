@@ -57,9 +57,9 @@ namespace LiterateProgramming
 		private void CopyFile (SplitPath inputFile)
 		{
 			var outputFile = _options.OutputPath + inputFile;
-			ConsoleOut ("Copying from file '{0}' into folder '{1}'",
+			ConsoleOut ("Copying file '{0}' to '{1}'",
 				inputFile.FilePath, outputFile.FilePath);
-			DirHelpers.Copy (!inputFile, !outputFile, true);
+			DirHelpers.Copy (!inputFile, outputFile.DirectoryName, true);
 		}
 		/*
 		The methods below construct the block list for a source file and write them 
