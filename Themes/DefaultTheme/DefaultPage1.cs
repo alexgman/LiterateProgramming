@@ -20,7 +20,7 @@ namespace DefaultTheme
     /// Class to produce the template output
     /// </summary>
     
-    #line 1 "C:\Users\tommi\Source\Repos\LiterateProgramming\Themes\DefaultTheme\DefaultPage.tt"
+    #line 1 "C:\Users\johteto\Source\Repos\LiterateProgramming\Themes\DefaultTheme\DefaultPage.tt"
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.TextTemplating", "15.0.0.0")]
     public partial class DefaultPage : DefaultPageBase
     {
@@ -30,101 +30,89 @@ namespace DefaultTheme
         /// </summary>
         public virtual string TransformText()
         {
-            this.Write("\n");
-            this.Write("\n");
-            this.Write("\n");
-            this.Write("\n");
             this.Write("\r\n");
-            this.Write("\n");
-            this.Write("\n");
-            this.Write("\n");
-            this.Write("\n");
-            this.Write("\n");
             this.Write("\r\n<!DOCTYPE html>\r\n<html lang=\"en\">\r\n\r\n");
             this.Write("<head>\r\n    <meta charset=\"utf-8\">\r\n    <meta http-equiv=\"X-UA-Compatible\" conten" +
                     "t=\"IE=edge\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-sca" +
                     "le=1\">\r\n\r\n    <title>");
             
-            #line 10 "C:\Users\tommi\Source\Repos\LiterateProgramming\Themes\DefaultTheme\_include/Head.tt"
+            #line 10 "C:\Users\johteto\Source\Repos\LiterateProgramming\Themes\DefaultTheme\_include/Head.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(Params.Filename + " - " + Params["projectname"]));
             
             #line default
             #line hidden
             this.Write("</title>\r\n\r\n\t<link rel=\"icon\" type=\"image/x-icon\" href=\"");
             
-            #line 12 "C:\Users\tommi\Source\Repos\LiterateProgramming\Themes\DefaultTheme\_include/Head.tt"
+            #line 12 "C:\Users\johteto\Source\Repos\LiterateProgramming\Themes\DefaultTheme\_include/Head.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(Params.Root));
             
             #line default
             #line hidden
             this.Write("images/favicon.ico\">\r\n    ");
-            this.Write("\n");
-            this.Write("\n");
-            this.Write("\n");
-            this.Write("\n<link rel=\"stylesheet\" href=\"");
+            this.Write("<link rel=\"stylesheet\" href=\"");
             
-            #line 1 "C:\Users\tommi\Source\Repos\LiterateProgramming\Themes\DefaultTheme\_include\styles.tt"
+            #line 5 "C:\Users\johteto\Source\Repos\LiterateProgramming\Themes\DefaultTheme\_include\styles.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(Params.Root));
             
             #line default
             #line hidden
-            this.Write("bootstrap/css/bootstrap.min.css\" />\n<link rel=\"stylesheet\" href=\"");
+            this.Write("bootstrap/css/bootstrap.min.css\" />\r\n<link rel=\"stylesheet\" href=\"");
             
-            #line 1 "C:\Users\tommi\Source\Repos\LiterateProgramming\Themes\DefaultTheme\_include\styles.tt"
+            #line 6 "C:\Users\johteto\Source\Repos\LiterateProgramming\Themes\DefaultTheme\_include\styles.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(Params.Root));
             
             #line default
             #line hidden
-            this.Write("font-awesome/css/font-awesome.min.css\">\n<link rel=\"stylesheet\" href=\"");
+            this.Write("font-awesome/css/font-awesome.min.css\">\r\n<link rel=\"stylesheet\" href=\"");
             
-            #line 1 "C:\Users\tommi\Source\Repos\LiterateProgramming\Themes\DefaultTheme\_include\styles.tt"
+            #line 7 "C:\Users\johteto\Source\Repos\LiterateProgramming\Themes\DefaultTheme\_include\styles.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(Params.Root));
             
             #line default
             #line hidden
-            this.Write("sidebar/sidebar.min.css\" />\n<link rel=\"stylesheet\" href=\"");
+            this.Write("sidebar/sidebar.min.css\" />\r\n<link rel=\"stylesheet\" href=\"");
             
-            #line 1 "C:\Users\tommi\Source\Repos\LiterateProgramming\Themes\DefaultTheme\_include\styles.tt"
+            #line 8 "C:\Users\johteto\Source\Repos\LiterateProgramming\Themes\DefaultTheme\_include\styles.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(Params.Root));
             
             #line default
             #line hidden
             this.Write("css/");
             
-            #line 1 "C:\Users\tommi\Source\Repos\LiterateProgramming\Themes\DefaultTheme\_include\styles.tt"
+            #line 8 "C:\Users\johteto\Source\Repos\LiterateProgramming\Themes\DefaultTheme\_include\styles.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(Params["markdownstyle", "book"]));
             
             #line default
             #line hidden
-            this.Write(".min.css\" />\n<link rel=\"stylesheet\" href=\"");
+            this.Write(".min.css\" />\r\n<link rel=\"stylesheet\" href=\"");
             
-            #line 1 "C:\Users\tommi\Source\Repos\LiterateProgramming\Themes\DefaultTheme\_include\styles.tt"
+            #line 9 "C:\Users\johteto\Source\Repos\LiterateProgramming\Themes\DefaultTheme\_include\styles.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(Params.Root));
             
             #line default
             #line hidden
             this.Write("syntax-highlight/");
             
-            #line 1 "C:\Users\tommi\Source\Repos\LiterateProgramming\Themes\DefaultTheme\_include\styles.tt"
+            #line 9 "C:\Users\johteto\Source\Repos\LiterateProgramming\Themes\DefaultTheme\_include\styles.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(Params["syntaxhighlight", "monokai"]));
             
             #line default
             #line hidden
-            this.Write(".min.css\" />\n<link rel=\"stylesheet\" href=\"");
+            this.Write(".min.css\" />\r\n<link rel=\"stylesheet\" href=\"");
             
-            #line 1 "C:\Users\tommi\Source\Repos\LiterateProgramming\Themes\DefaultTheme\_include\styles.tt"
+            #line 10 "C:\Users\johteto\Source\Repos\LiterateProgramming\Themes\DefaultTheme\_include\styles.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(Params.Root));
             
             #line default
             #line hidden
             this.Write("mermaid/");
             
-            #line 1 "C:\Users\tommi\Source\Repos\LiterateProgramming\Themes\DefaultTheme\_include\styles.tt"
+            #line 10 "C:\Users\johteto\Source\Repos\LiterateProgramming\Themes\DefaultTheme\_include\styles.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(Params["diagramstyle", "mermaid"]));
             
             #line default
             #line hidden
-            this.Write(".css\" />\n");
+            this.Write(".css\" />\r\n");
             this.Write("\r\n</head>");
             this.Write("\r\n\r\n<body>\r\n    ");
             this.Write(@"
@@ -137,32 +125,90 @@ namespace DefaultTheme
                     <span class=""icon-bar""></span>
                     <span class=""icon-bar""></span>
                 </button>
-                <a class=""navbar-brand"" href=""");
+");
             
-            #line 15 "C:\Users\tommi\Source\Repos\LiterateProgramming\Themes\DefaultTheme\_include/navbar.tt"
+            #line 15 "C:\Users\johteto\Source\Repos\LiterateProgramming\Themes\DefaultTheme\_include/navbar.tt"
+
+var lg = "logo";
+if (Params[lg] != lg)
+{
+
+            
+            #line default
+            #line hidden
+            this.Write("                <a class=\"navbar-brand\" href=\"");
+            
+            #line 20 "C:\Users\johteto\Source\Repos\LiterateProgramming\Themes\DefaultTheme\_include/navbar.tt"
+            this.Write(this.ToStringHelper.ToStringWithCulture(Params.Root));
+            
+            #line default
+            #line hidden
+            this.Write("index.html\"><span><img src=\"");
+            
+            #line 20 "C:\Users\johteto\Source\Repos\LiterateProgramming\Themes\DefaultTheme\_include/navbar.tt"
+            this.Write(this.ToStringHelper.ToStringWithCulture(Params.Root));
+            
+            #line default
+            #line hidden
+            
+            #line 20 "C:\Users\johteto\Source\Repos\LiterateProgramming\Themes\DefaultTheme\_include/navbar.tt"
+            this.Write(this.ToStringHelper.ToStringWithCulture(Params[lg]));
+            
+            #line default
+            #line hidden
+            this.Write("\" height=\"24\" />  ");
+            
+            #line 20 "C:\Users\johteto\Source\Repos\LiterateProgramming\Themes\DefaultTheme\_include/navbar.tt"
+            this.Write(this.ToStringHelper.ToStringWithCulture(Params["projectname"]));
+            
+            #line default
+            #line hidden
+            this.Write("</span></a>\r\n");
+            
+            #line 21 "C:\Users\johteto\Source\Repos\LiterateProgramming\Themes\DefaultTheme\_include/navbar.tt"
+
+}
+else
+{
+
+            
+            #line default
+            #line hidden
+            this.Write("                <a class=\"navbar-brand\" href=\"");
+            
+            #line 26 "C:\Users\johteto\Source\Repos\LiterateProgramming\Themes\DefaultTheme\_include/navbar.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(Params.Root));
             
             #line default
             #line hidden
             this.Write("index.html\">");
             
-            #line 15 "C:\Users\tommi\Source\Repos\LiterateProgramming\Themes\DefaultTheme\_include/navbar.tt"
+            #line 26 "C:\Users\johteto\Source\Repos\LiterateProgramming\Themes\DefaultTheme\_include/navbar.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(Params["projectname"]));
             
             #line default
             #line hidden
-            this.Write("</a>\r\n            </div>\r\n            <div id=\"navbar\" class=\"navbar-collapse col" +
-                    "lapse\">\r\n                <ul class=\"nav navbar-nav\">\r\n                    <li><a" +
-                    " href=\"");
+            this.Write("</a>\r\n");
             
-            #line 19 "C:\Users\tommi\Source\Repos\LiterateProgramming\Themes\DefaultTheme\_include/navbar.tt"
+            #line 27 "C:\Users\johteto\Source\Repos\LiterateProgramming\Themes\DefaultTheme\_include/navbar.tt"
+
+}
+
+            
+            #line default
+            #line hidden
+            this.Write("            </div>\r\n            <div id=\"navbar\" class=\"navbar-collapse collapse\"" +
+                    ">\r\n                <ul class=\"nav navbar-nav\">\r\n                    <li><a href=" +
+                    "\"");
+            
+            #line 33 "C:\Users\johteto\Source\Repos\LiterateProgramming\Themes\DefaultTheme\_include/navbar.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(Params.Root));
             
             #line default
             #line hidden
             this.Write("index.html\"><i class=\"fa fa-home\" aria-hidden=\"true\"></i> Home</a></li>\r\n");
             
-            #line 20 "C:\Users\tommi\Source\Repos\LiterateProgramming\Themes\DefaultTheme\_include/navbar.tt"
+            #line 34 "C:\Users\johteto\Source\Repos\LiterateProgramming\Themes\DefaultTheme\_include/navbar.tt"
 
 var gh = "github";
 if (Params[gh] != gh)
@@ -173,14 +219,14 @@ if (Params[gh] != gh)
             #line hidden
             this.Write("\t\t\t\t\t<li><a href=\"");
             
-            #line 25 "C:\Users\tommi\Source\Repos\LiterateProgramming\Themes\DefaultTheme\_include/navbar.tt"
+            #line 39 "C:\Users\johteto\Source\Repos\LiterateProgramming\Themes\DefaultTheme\_include/navbar.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(Params[gh]));
             
             #line default
             #line hidden
             this.Write("\"><i class=\"fa fa-github\" aria-hidden=\"true\"></i> GitHub Repository</a></li>\r\n");
             
-            #line 26 "C:\Users\tommi\Source\Repos\LiterateProgramming\Themes\DefaultTheme\_include/navbar.tt"
+            #line 40 "C:\Users\johteto\Source\Repos\LiterateProgramming\Themes\DefaultTheme\_include/navbar.tt"
 
 }
 var dl = "download";
@@ -192,14 +238,14 @@ if (Params[dl] != dl)
             #line hidden
             this.Write("                    <li><a href=\"");
             
-            #line 32 "C:\Users\tommi\Source\Repos\LiterateProgramming\Themes\DefaultTheme\_include/navbar.tt"
+            #line 46 "C:\Users\johteto\Source\Repos\LiterateProgramming\Themes\DefaultTheme\_include/navbar.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(Params[dl]));
             
             #line default
             #line hidden
             this.Write("\"><i class=\"fa fa-download\" aria-hidden=\"true\"></i> Download</a></li>\r\n");
             
-            #line 33 "C:\Users\tommi\Source\Repos\LiterateProgramming\Themes\DefaultTheme\_include/navbar.tt"
+            #line 47 "C:\Users\johteto\Source\Repos\LiterateProgramming\Themes\DefaultTheme\_include/navbar.tt"
 
 }
 var ng = "nuget";
@@ -211,14 +257,14 @@ if (Params[ng] != ng)
             #line hidden
             this.Write("                    <li><a href=\"");
             
-            #line 39 "C:\Users\tommi\Source\Repos\LiterateProgramming\Themes\DefaultTheme\_include/navbar.tt"
+            #line 53 "C:\Users\johteto\Source\Repos\LiterateProgramming\Themes\DefaultTheme\_include/navbar.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(Params[ng]));
             
             #line default
             #line hidden
             this.Write("\"><i class=\"fa fa-cloud-download\" aria-hidden=\"true\"></i> NuGet</a></li>\r\n");
             
-            #line 40 "C:\Users\tommi\Source\Repos\LiterateProgramming\Themes\DefaultTheme\_include/navbar.tt"
+            #line 54 "C:\Users\johteto\Source\Repos\LiterateProgramming\Themes\DefaultTheme\_include/navbar.tt"
 
 }
 var lc = "license";
@@ -230,20 +276,20 @@ if (Params[lc] != lc)
             #line hidden
             this.Write("                    <li><a href=\"");
             
-            #line 46 "C:\Users\tommi\Source\Repos\LiterateProgramming\Themes\DefaultTheme\_include/navbar.tt"
+            #line 60 "C:\Users\johteto\Source\Repos\LiterateProgramming\Themes\DefaultTheme\_include/navbar.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(Params.Root));
             
             #line default
             #line hidden
             
-            #line 46 "C:\Users\tommi\Source\Repos\LiterateProgramming\Themes\DefaultTheme\_include/navbar.tt"
+            #line 60 "C:\Users\johteto\Source\Repos\LiterateProgramming\Themes\DefaultTheme\_include/navbar.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(Params[lc]));
             
             #line default
             #line hidden
             this.Write("\">License</a></li>\r\n");
             
-            #line 47 "C:\Users\tommi\Source\Repos\LiterateProgramming\Themes\DefaultTheme\_include/navbar.tt"
+            #line 61 "C:\Users\johteto\Source\Repos\LiterateProgramming\Themes\DefaultTheme\_include/navbar.tt"
 
 }
 
@@ -253,11 +299,7 @@ if (Params[lc] != lc)
             this.Write("                </ul>\r\n            </div>\r\n        </div>\r\n    </nav>");
             this.Write("\r\n\r\n    <div class=\"container\">\r\n        <div class=\"row\">\r\n            <div clas" +
                     "s=\"col-md-3 hidden-xs hidden-sm\">\r\n                ");
-            this.Write("\n");
-            this.Write("\n");
-            this.Write("\n");
             this.Write(@"
-
         <div class=""panel panel-default"">
             <div class=""panel-heading"">
                 <h4>On This Page</h4>
@@ -273,29 +315,29 @@ if (Params[lc] != lc)
             <div class=""panel-body main-menu"">
                 ");
             
-            #line 1 "C:\Users\tommi\Source\Repos\LiterateProgramming\Themes\DefaultTheme\_include/SideBar.tt"
+            #line 19 "C:\Users\johteto\Source\Repos\LiterateProgramming\Themes\DefaultTheme\_include/SideBar.tt"
  OutputToc (Params.Toc.Contents); 
             
             #line default
             #line hidden
-            this.Write("\n            </div>\n        </div>\n");
+            this.Write("            </div>\r\n        </div>\r\n");
             this.Write("\r\n            </div>\r\n\t\t\t<div class=\"col-md-9\">\r\n\t\t\t\t");
             
-            #line 23 "C:\Users\tommi\Source\Repos\LiterateProgramming\Themes\DefaultTheme\DefaultPage.tt"
+            #line 23 "C:\Users\johteto\Source\Repos\LiterateProgramming\Themes\DefaultTheme\DefaultPage.tt"
  OutputPager (); 
             
             #line default
             #line hidden
             this.Write("\t\t\t\t<div id=\"static-content\" class=\"markdown\">\r\n\t\t\t\t\t");
             
-            #line 25 "C:\Users\tommi\Source\Repos\LiterateProgramming\Themes\DefaultTheme\DefaultPage.tt"
+            #line 25 "C:\Users\johteto\Source\Repos\LiterateProgramming\Themes\DefaultTheme\DefaultPage.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(Params.Contents));
             
             #line default
             #line hidden
             this.Write("\r\n\t\t\t\t</div>\r\n\t\t\t\t");
             
-            #line 27 "C:\Users\tommi\Source\Repos\LiterateProgramming\Themes\DefaultTheme\DefaultPage.tt"
+            #line 27 "C:\Users\johteto\Source\Repos\LiterateProgramming\Themes\DefaultTheme\DefaultPage.tt"
  OutputPager (); 
             
             #line default
@@ -303,47 +345,44 @@ if (Params[lc] != lc)
             this.Write("\t\t\t</div>\r\n        </div>\r\n    </div>\r\n    ");
             this.Write("\r\n    <footer class=\"panel-footer text-center\">\r\n        <p>");
             
-            #line 7 "C:\Users\tommi\Source\Repos\LiterateProgramming\Themes\DefaultTheme\_include/Footer.tt"
+            #line 7 "C:\Users\johteto\Source\Repos\LiterateProgramming\Themes\DefaultTheme\_include/Footer.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(Params["footer"]));
             
             #line default
             #line hidden
             this.Write("</p>\r\n    </footer>\r\n");
             this.Write("\r\n\r\n    ");
-            this.Write("\n");
-            this.Write("\n");
-            this.Write("\n");
-            this.Write("\n\n    <script src=\"");
+            this.Write("\r\n    <script src=\"");
             
-            #line 1 "C:\Users\tommi\Source\Repos\LiterateProgramming\Themes\DefaultTheme\_include/Scripts.tt"
+            #line 6 "C:\Users\johteto\Source\Repos\LiterateProgramming\Themes\DefaultTheme\_include/Scripts.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(Params.Root));
             
             #line default
             #line hidden
-            this.Write("bootstrap/js/jquery.min.js\"></script>\n    <script src=\"");
+            this.Write("bootstrap/js/jquery.min.js\"></script>\r\n    <script src=\"");
             
-            #line 1 "C:\Users\tommi\Source\Repos\LiterateProgramming\Themes\DefaultTheme\_include/Scripts.tt"
+            #line 7 "C:\Users\johteto\Source\Repos\LiterateProgramming\Themes\DefaultTheme\_include/Scripts.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(Params.Root));
             
             #line default
             #line hidden
-            this.Write("bootstrap/js/bootstrap.min.js\"></script>\n    <script src=\"");
+            this.Write("bootstrap/js/bootstrap.min.js\"></script>\r\n    <script src=\"");
             
-            #line 1 "C:\Users\tommi\Source\Repos\LiterateProgramming\Themes\DefaultTheme\_include/Scripts.tt"
+            #line 8 "C:\Users\johteto\Source\Repos\LiterateProgramming\Themes\DefaultTheme\_include/Scripts.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(Params.Root));
             
             #line default
             #line hidden
-            this.Write("sidebar/sidebar.js\"></script>\n    <script src=\"");
+            this.Write("sidebar/sidebar.js\"></script>\r\n    <script src=\"");
             
-            #line 1 "C:\Users\tommi\Source\Repos\LiterateProgramming\Themes\DefaultTheme\_include/Scripts.tt"
+            #line 9 "C:\Users\johteto\Source\Repos\LiterateProgramming\Themes\DefaultTheme\_include/Scripts.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(Params.Root));
             
             #line default
             #line hidden
-            this.Write("syntax-highlight/syntax.js\"></script>\n");
+            this.Write("syntax-highlight/syntax.js\"></script>\r\n");
             
-            #line 1 "C:\Users\tommi\Source\Repos\LiterateProgramming\Themes\DefaultTheme\_include/Scripts.tt"
+            #line 10 "C:\Users\johteto\Source\Repos\LiterateProgramming\Themes\DefaultTheme\_include/Scripts.tt"
  
 if (Params["usemath", null] != null) 
 { 
@@ -351,12 +390,12 @@ if (Params["usemath", null] != null)
             
             #line default
             #line hidden
-            this.Write("\n    <script type=\"text/x-mathjax-config\">\n        MathJax.Hub.Config({\n        e" +
-                    "xtensions: [\"jsMath2jax.js\"]\n        });\n    </script>\n    <script src=\'https://" +
-                    "cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML\'></s" +
-                    "cript>\n");
+            this.Write("    <script type=\"text/x-mathjax-config\">\r\n        MathJax.Hub.Config({\r\n        " +
+                    "extensions: [\"jsMath2jax.js\"]\r\n        });\r\n    </script>\r\n    <script src=\'http" +
+                    "s://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML\'" +
+                    "></script>\r\n");
             
-            #line 1 "C:\Users\tommi\Source\Repos\LiterateProgramming\Themes\DefaultTheme\_include/Scripts.tt"
+            #line 20 "C:\Users\johteto\Source\Repos\LiterateProgramming\Themes\DefaultTheme\_include/Scripts.tt"
  
 } 
 if (Params["usediagrams", null] != null) 
@@ -365,17 +404,17 @@ if (Params["usediagrams", null] != null)
             
             #line default
             #line hidden
-            this.Write("\n\t<script src=\"");
+            this.Write("\t<script src=\"");
             
-            #line 1 "C:\Users\tommi\Source\Repos\LiterateProgramming\Themes\DefaultTheme\_include/Scripts.tt"
+            #line 25 "C:\Users\johteto\Source\Repos\LiterateProgramming\Themes\DefaultTheme\_include/Scripts.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(Params.Root));
             
             #line default
             #line hidden
-            this.Write("mermaid/mermaid.min.js\"></script>\n\t<script>mermaid.initialize({startOnLoad:true})" +
-                    ";</script>\n");
+            this.Write("mermaid/mermaid.min.js\"></script>\r\n\t<script>mermaid.initialize({startOnLoad:true}" +
+                    ");</script>\r\n");
             
-            #line 1 "C:\Users\tommi\Source\Repos\LiterateProgramming\Themes\DefaultTheme\_include/Scripts.tt"
+            #line 27 "C:\Users\johteto\Source\Repos\LiterateProgramming\Themes\DefaultTheme\_include/Scripts.tt"
  
 } 
 
@@ -386,21 +425,21 @@ if (Params["usediagrams", null] != null)
             return this.GenerationEnvironment.ToString();
         }
         
-        #line 1 "C:\Users\tommi\Source\Repos\LiterateProgramming\Themes\DefaultTheme\_include/Toc.tt"
+        #line 5 "C:\Users\johteto\Source\Repos\LiterateProgramming\Themes\DefaultTheme\_include/Toc.tt"
   public void OutputToc (List<Section> sections)
 { 
         
         #line default
         #line hidden
         
-        #line 1 "C:\Users\tommi\Source\Repos\LiterateProgramming\Themes\DefaultTheme\_include/Toc.tt"
-this.Write("\n<ul>\n");
+        #line 6 "C:\Users\johteto\Source\Repos\LiterateProgramming\Themes\DefaultTheme\_include/Toc.tt"
+this.Write("<ul>\r\n");
 
         
         #line default
         #line hidden
         
-        #line 1 "C:\Users\tommi\Source\Repos\LiterateProgramming\Themes\DefaultTheme\_include/Toc.tt"
+        #line 8 "C:\Users\johteto\Source\Repos\LiterateProgramming\Themes\DefaultTheme\_include/Toc.tt"
  foreach (var section in sections) 
 	{ 
 		if (section.File != null)
@@ -409,56 +448,56 @@ this.Write("\n<ul>\n");
         #line default
         #line hidden
         
-        #line 1 "C:\Users\tommi\Source\Repos\LiterateProgramming\Themes\DefaultTheme\_include/Toc.tt"
-this.Write("\n\t<li><a href=\"");
+        #line 11 "C:\Users\johteto\Source\Repos\LiterateProgramming\Themes\DefaultTheme\_include/Toc.tt"
+this.Write("\t<li><a href=\"");
 
         
         #line default
         #line hidden
         
-        #line 1 "C:\Users\tommi\Source\Repos\LiterateProgramming\Themes\DefaultTheme\_include/Toc.tt"
+        #line 12 "C:\Users\johteto\Source\Repos\LiterateProgramming\Themes\DefaultTheme\_include/Toc.tt"
 this.Write(this.ToStringHelper.ToStringWithCulture(Params.SectionPath (section)));
 
         
         #line default
         #line hidden
         
-        #line 1 "C:\Users\tommi\Source\Repos\LiterateProgramming\Themes\DefaultTheme\_include/Toc.tt"
+        #line 12 "C:\Users\johteto\Source\Repos\LiterateProgramming\Themes\DefaultTheme\_include/Toc.tt"
 this.Write("\"");
 
         
         #line default
         #line hidden
         
-        #line 1 "C:\Users\tommi\Source\Repos\LiterateProgramming\Themes\DefaultTheme\_include/Toc.tt"
+        #line 12 "C:\Users\johteto\Source\Repos\LiterateProgramming\Themes\DefaultTheme\_include/Toc.tt"
 this.Write(this.ToStringHelper.ToStringWithCulture(SectionStyle (section)));
 
         
         #line default
         #line hidden
         
-        #line 1 "C:\Users\tommi\Source\Repos\LiterateProgramming\Themes\DefaultTheme\_include/Toc.tt"
+        #line 12 "C:\Users\johteto\Source\Repos\LiterateProgramming\Themes\DefaultTheme\_include/Toc.tt"
 this.Write(">");
 
         
         #line default
         #line hidden
         
-        #line 1 "C:\Users\tommi\Source\Repos\LiterateProgramming\Themes\DefaultTheme\_include/Toc.tt"
+        #line 12 "C:\Users\johteto\Source\Repos\LiterateProgramming\Themes\DefaultTheme\_include/Toc.tt"
 this.Write(this.ToStringHelper.ToStringWithCulture(section.Page));
 
         
         #line default
         #line hidden
         
-        #line 1 "C:\Users\tommi\Source\Repos\LiterateProgramming\Themes\DefaultTheme\_include/Toc.tt"
-this.Write("</a></li>\n");
+        #line 12 "C:\Users\johteto\Source\Repos\LiterateProgramming\Themes\DefaultTheme\_include/Toc.tt"
+this.Write("</a></li>\r\n");
 
         
         #line default
         #line hidden
         
-        #line 1 "C:\Users\tommi\Source\Repos\LiterateProgramming\Themes\DefaultTheme\_include/Toc.tt"
+        #line 13 "C:\Users\johteto\Source\Repos\LiterateProgramming\Themes\DefaultTheme\_include/Toc.tt"
 		}
 		else
 		{ 
@@ -466,41 +505,41 @@ this.Write("</a></li>\n");
         #line default
         #line hidden
         
-        #line 1 "C:\Users\tommi\Source\Repos\LiterateProgramming\Themes\DefaultTheme\_include/Toc.tt"
-this.Write("\n\t<li>");
+        #line 15 "C:\Users\johteto\Source\Repos\LiterateProgramming\Themes\DefaultTheme\_include/Toc.tt"
+this.Write("\t<li>");
 
         
         #line default
         #line hidden
         
-        #line 1 "C:\Users\tommi\Source\Repos\LiterateProgramming\Themes\DefaultTheme\_include/Toc.tt"
+        #line 16 "C:\Users\johteto\Source\Repos\LiterateProgramming\Themes\DefaultTheme\_include/Toc.tt"
 this.Write(this.ToStringHelper.ToStringWithCulture(section.Page));
 
         
         #line default
         #line hidden
         
-        #line 1 "C:\Users\tommi\Source\Repos\LiterateProgramming\Themes\DefaultTheme\_include/Toc.tt"
-this.Write("</li>\n");
+        #line 16 "C:\Users\johteto\Source\Repos\LiterateProgramming\Themes\DefaultTheme\_include/Toc.tt"
+this.Write("</li>\r\n");
 
         
         #line default
         #line hidden
         
-        #line 1 "C:\Users\tommi\Source\Repos\LiterateProgramming\Themes\DefaultTheme\_include/Toc.tt"
+        #line 17 "C:\Users\johteto\Source\Repos\LiterateProgramming\Themes\DefaultTheme\_include/Toc.tt"
 		} 
         
         #line default
         #line hidden
         
-        #line 1 "C:\Users\tommi\Source\Repos\LiterateProgramming\Themes\DefaultTheme\_include/Toc.tt"
-this.Write("\n\t<ul>\n");
+        #line 17 "C:\Users\johteto\Source\Repos\LiterateProgramming\Themes\DefaultTheme\_include/Toc.tt"
+this.Write("\t<ul>\r\n");
 
         
         #line default
         #line hidden
         
-        #line 1 "C:\Users\tommi\Source\Repos\LiterateProgramming\Themes\DefaultTheme\_include/Toc.tt"
+        #line 19 "C:\Users\johteto\Source\Repos\LiterateProgramming\Themes\DefaultTheme\_include/Toc.tt"
 
 		if (Params["ShowDescriptionsInToc"] == "true")
 		{
@@ -509,28 +548,28 @@ this.Write("\n\t<ul>\n");
         #line default
         #line hidden
         
-        #line 1 "C:\Users\tommi\Source\Repos\LiterateProgramming\Themes\DefaultTheme\_include/Toc.tt"
-this.Write("\n\t\t<li>");
+        #line 22 "C:\Users\johteto\Source\Repos\LiterateProgramming\Themes\DefaultTheme\_include/Toc.tt"
+this.Write("\t\t<li>");
 
         
         #line default
         #line hidden
         
-        #line 1 "C:\Users\tommi\Source\Repos\LiterateProgramming\Themes\DefaultTheme\_include/Toc.tt"
+        #line 23 "C:\Users\johteto\Source\Repos\LiterateProgramming\Themes\DefaultTheme\_include/Toc.tt"
 this.Write(this.ToStringHelper.ToStringWithCulture(section.Desc ?? ""));
 
         
         #line default
         #line hidden
         
-        #line 1 "C:\Users\tommi\Source\Repos\LiterateProgramming\Themes\DefaultTheme\_include/Toc.tt"
-this.Write("</li>\n");
+        #line 23 "C:\Users\johteto\Source\Repos\LiterateProgramming\Themes\DefaultTheme\_include/Toc.tt"
+this.Write("</li>\r\n");
 
         
         #line default
         #line hidden
         
-        #line 1 "C:\Users\tommi\Source\Repos\LiterateProgramming\Themes\DefaultTheme\_include/Toc.tt"
+        #line 24 "C:\Users\johteto\Source\Repos\LiterateProgramming\Themes\DefaultTheme\_include/Toc.tt"
 
 		}
 		if (section.Subs != null)
@@ -540,27 +579,27 @@ this.Write("</li>\n");
         #line default
         #line hidden
         
-        #line 1 "C:\Users\tommi\Source\Repos\LiterateProgramming\Themes\DefaultTheme\_include/Toc.tt"
-this.Write("\n\t</ul>\n");
+        #line 28 "C:\Users\johteto\Source\Repos\LiterateProgramming\Themes\DefaultTheme\_include/Toc.tt"
+this.Write("\t</ul>\r\n");
 
         
         #line default
         #line hidden
         
-        #line 1 "C:\Users\tommi\Source\Repos\LiterateProgramming\Themes\DefaultTheme\_include/Toc.tt"
+        #line 30 "C:\Users\johteto\Source\Repos\LiterateProgramming\Themes\DefaultTheme\_include/Toc.tt"
 	} 
         
         #line default
         #line hidden
         
-        #line 1 "C:\Users\tommi\Source\Repos\LiterateProgramming\Themes\DefaultTheme\_include/Toc.tt"
-this.Write("\n</ul>\n");
+        #line 30 "C:\Users\johteto\Source\Repos\LiterateProgramming\Themes\DefaultTheme\_include/Toc.tt"
+this.Write("</ul>\r\n");
 
         
         #line default
         #line hidden
         
-        #line 1 "C:\Users\tommi\Source\Repos\LiterateProgramming\Themes\DefaultTheme\_include/Toc.tt"
+        #line 32 "C:\Users\johteto\Source\Repos\LiterateProgramming\Themes\DefaultTheme\_include/Toc.tt"
  } 
 
 private string SectionStyle (Section section)
@@ -573,7 +612,7 @@ private string SectionStyle (Section section)
         #line default
         #line hidden
         
-        #line 1 "C:\Users\tommi\Source\Repos\LiterateProgramming\Themes\DefaultTheme\_include/Pager.tt"
+        #line 6 "C:\Users\johteto\Source\Repos\LiterateProgramming\Themes\DefaultTheme\_include/Pager.tt"
  public void OutputPager ()
 {
 	var current = Params.CurrentSection;
@@ -586,98 +625,98 @@ private string SectionStyle (Section section)
         #line default
         #line hidden
         
-        #line 1 "C:\Users\tommi\Source\Repos\LiterateProgramming\Themes\DefaultTheme\_include/Pager.tt"
-this.Write("\n<ul class=\"pager\">\n\t<li class=\"previous");
+        #line 13 "C:\Users\johteto\Source\Repos\LiterateProgramming\Themes\DefaultTheme\_include/Pager.tt"
+this.Write("<ul class=\"pager\">\r\n\t<li class=\"previous");
 
         
         #line default
         #line hidden
         
-        #line 1 "C:\Users\tommi\Source\Repos\LiterateProgramming\Themes\DefaultTheme\_include/Pager.tt"
+        #line 15 "C:\Users\johteto\Source\Repos\LiterateProgramming\Themes\DefaultTheme\_include/Pager.tt"
 this.Write(this.ToStringHelper.ToStringWithCulture(Disabled (prev)));
 
         
         #line default
         #line hidden
         
-        #line 1 "C:\Users\tommi\Source\Repos\LiterateProgramming\Themes\DefaultTheme\_include/Pager.tt"
+        #line 15 "C:\Users\johteto\Source\Repos\LiterateProgramming\Themes\DefaultTheme\_include/Pager.tt"
 this.Write("\"><a href=\"");
 
         
         #line default
         #line hidden
         
-        #line 1 "C:\Users\tommi\Source\Repos\LiterateProgramming\Themes\DefaultTheme\_include/Pager.tt"
+        #line 15 "C:\Users\johteto\Source\Repos\LiterateProgramming\Themes\DefaultTheme\_include/Pager.tt"
 this.Write(this.ToStringHelper.ToStringWithCulture(Link (prev)));
 
         
         #line default
         #line hidden
         
-        #line 1 "C:\Users\tommi\Source\Repos\LiterateProgramming\Themes\DefaultTheme\_include/Pager.tt"
+        #line 15 "C:\Users\johteto\Source\Repos\LiterateProgramming\Themes\DefaultTheme\_include/Pager.tt"
 this.Write("\">Previous");
 
         
         #line default
         #line hidden
         
-        #line 1 "C:\Users\tommi\Source\Repos\LiterateProgramming\Themes\DefaultTheme\_include/Pager.tt"
+        #line 15 "C:\Users\johteto\Source\Repos\LiterateProgramming\Themes\DefaultTheme\_include/Pager.tt"
 this.Write(this.ToStringHelper.ToStringWithCulture(Title (prev)));
 
         
         #line default
         #line hidden
         
-        #line 1 "C:\Users\tommi\Source\Repos\LiterateProgramming\Themes\DefaultTheme\_include/Pager.tt"
-this.Write("</a></li>\n\t<li class=\"next");
+        #line 15 "C:\Users\johteto\Source\Repos\LiterateProgramming\Themes\DefaultTheme\_include/Pager.tt"
+this.Write("</a></li>\r\n\t<li class=\"next");
 
         
         #line default
         #line hidden
         
-        #line 1 "C:\Users\tommi\Source\Repos\LiterateProgramming\Themes\DefaultTheme\_include/Pager.tt"
+        #line 16 "C:\Users\johteto\Source\Repos\LiterateProgramming\Themes\DefaultTheme\_include/Pager.tt"
 this.Write(this.ToStringHelper.ToStringWithCulture(Disabled (next)));
 
         
         #line default
         #line hidden
         
-        #line 1 "C:\Users\tommi\Source\Repos\LiterateProgramming\Themes\DefaultTheme\_include/Pager.tt"
+        #line 16 "C:\Users\johteto\Source\Repos\LiterateProgramming\Themes\DefaultTheme\_include/Pager.tt"
 this.Write("\"><a href=\"");
 
         
         #line default
         #line hidden
         
-        #line 1 "C:\Users\tommi\Source\Repos\LiterateProgramming\Themes\DefaultTheme\_include/Pager.tt"
+        #line 16 "C:\Users\johteto\Source\Repos\LiterateProgramming\Themes\DefaultTheme\_include/Pager.tt"
 this.Write(this.ToStringHelper.ToStringWithCulture(Link (next)));
 
         
         #line default
         #line hidden
         
-        #line 1 "C:\Users\tommi\Source\Repos\LiterateProgramming\Themes\DefaultTheme\_include/Pager.tt"
+        #line 16 "C:\Users\johteto\Source\Repos\LiterateProgramming\Themes\DefaultTheme\_include/Pager.tt"
 this.Write("\">Next");
 
         
         #line default
         #line hidden
         
-        #line 1 "C:\Users\tommi\Source\Repos\LiterateProgramming\Themes\DefaultTheme\_include/Pager.tt"
+        #line 16 "C:\Users\johteto\Source\Repos\LiterateProgramming\Themes\DefaultTheme\_include/Pager.tt"
 this.Write(this.ToStringHelper.ToStringWithCulture(Title (next)));
 
         
         #line default
         #line hidden
         
-        #line 1 "C:\Users\tommi\Source\Repos\LiterateProgramming\Themes\DefaultTheme\_include/Pager.tt"
-this.Write("</a></li>\n</ul>\n");
+        #line 16 "C:\Users\johteto\Source\Repos\LiterateProgramming\Themes\DefaultTheme\_include/Pager.tt"
+this.Write("</a></li>\r\n</ul>\r\n");
 
         
         #line default
         #line hidden
         
-        #line 1 "C:\Users\tommi\Source\Repos\LiterateProgramming\Themes\DefaultTheme\_include/Pager.tt"
+        #line 18 "C:\Users\johteto\Source\Repos\LiterateProgramming\Themes\DefaultTheme\_include/Pager.tt"
  } 
 
 private string Disabled (Section entry) =>

@@ -41,6 +41,7 @@ below. The columns indicate if a parameter is supported by a specific template.
 | Parameter             | Default   | Landing  |
 | --------------------- |:---------:|:--------:|
 | ProjectName           |     *     |     *    |
+| Logo                  |     *     |     *    |
 | GitHub                |     *     |     *    |
 | Download              |     *     |     *    |
 | NuGet                 |     *     |     *    |
@@ -65,6 +66,11 @@ used with the subsequently processed files.
 ### `ProjectName` (string)
 
 The name of the project that is shown in the toolbar of the HTML pages.
+
+### `Logo` (string)
+
+A relative path to the image logo that is shown along with the project name. The
+image is scaled so that its height is 24 pixels.
 
 ### `GitHub` (URL)
 
