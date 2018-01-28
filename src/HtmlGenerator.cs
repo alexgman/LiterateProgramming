@@ -68,6 +68,7 @@ namespace LiterateProgramming
 				.UseMathematics ()
 				.UseDiagrams ()
 				.UsePipeTables ()
+				.UseEmphasisExtras ()
 				.Build ();
 			_params = new PageParams ();
 			_params.Toc = toc;
