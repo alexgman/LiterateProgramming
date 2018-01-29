@@ -91,3 +91,7 @@
   - page: License
     file: License.md
     desc: Program license and terms of use.
+
+  - page: README
+    file: README.md
+    desc: TODO! Add page description.

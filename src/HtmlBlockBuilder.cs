@@ -44,6 +44,7 @@ namespace LiterateProgramming
 		We need access to the SemanticModel object that is created when the project
 		is compiled.
 		*/
+		private Document _document;
 		private SemanticModel _model;
 		/*
 		The hash table below stores the IDs we have assigned thus far. In order not
@@ -67,6 +68,7 @@ namespace LiterateProgramming
 		*/
 		public override BlockList Execute (Document document)
 		{
+			_document = document;
 			_model = document.GetSemanticModelAsync ().Result;
 			_ids.Clear ();
 			return base.Execute (document);
@@ -227,10 +229,12 @@ namespace LiterateProgramming
 		private string GetHrefForSymbol (ISymbol symbol)
 		{
 			var sref = symbol.DeclaringSyntaxReferences.First ();
-			var file = SplitPath.Split (_options.InputPath.BasePath,
+			var reffile = SplitPath.Split (_options.InputPath.BasePath,
 				sref.SyntaxTree.FilePath);
-			return Path.Combine (file.RelativeFileRoot,
-				file.ChangeExtension ("html").FilePath).Replace ('\\', '/') +
+			var inputfile = SplitPath.Split (_options.InputPath.BasePath,
+				_document.FilePath);
+			return Path.Combine (inputfile.RelativeFileRoot,
+				reffile.ChangeExtension ("html").FilePath).Replace ('\\', '/') +
 				"#" + GetSymbolId (symbol);
 		}
 		/*
