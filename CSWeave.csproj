@@ -192,6 +192,8 @@
     <Content Include="docs\images\Code.png" />
     <Content Include="docs\images\Diagram.png" />
     <Content Include="docs\images\favicon.ico" />
+    <Content Include="docs\images\FrontMatter.png" />
+    <Content Include="docs\images\GitHubPages.png" />
     <Content Include="docs\images\jumbotron.jpg" />
     <Content Include="docs\images\LPFlow.png" />
     <Content Include="docs\images\Navigation.png" />

@@ -15,25 +15,23 @@ UseMath: true
 _Jumbotron: >
     # Literate Programming in C#
 
-    Produce good-looking, interactive documentation for your C# projects using
+    Produce beautiful, interactive documentation for your C# projects using
     [literate programming](https://en.wikipedia.org/wiki/Literate_programming). 
-    Write comments in [markdown](https://en.wikipedia.org/wiki/Markdown) and 
-    create fully functional web sites that can be published on 
-    [GitHub](https://github.com) or other web hosting services.
+    Write your documentation inside code comments using 
+    [markdown](https://en.wikipedia.org/wiki/Markdown) 
+    and compile it to a fully functional web site that can be published on 
+    [GitHub](https://github.com) in a jiffy.
 ---
 
 ::::::row
 :::col-md-6
-## Fully Customizable Output
+## Step 1: Write Your Documentation
 
-Generate either raw markdown files or static web sites with everything included. 
-Use themes and parameters to customize the sites. You can include a 
-[YAML](http://yaml.org/) front matter in your source files to pass parameters to 
-themes.
-
-[Markdig](https://github.com/lunet-io/markdig)
-library is used to convert the markdown to HTML. It enables a lot of useful
-extensions from [MathJax](https://www.mathjax.org/) formulas to 
+Embed your documentation inside code comments or put it into separate markdown 
+files. All the formatting features of markdown are available to you. 
+[Markdig](https://github.com/lunet-io/markdig) library is used to convert the 
+markdown to HTML. It offers a lot of useful extensions from 
+[MathJax](https://www.mathjax.org/) formulas to 
 [mermaid](https://knsv.github.io/mermaid/) diagrams. 
 :::
 :::col-md-6
@@ -43,31 +41,57 @@ extensions from [MathJax](https://www.mathjax.org/) formulas to
 
 ::::::row
 :::col-md-6
-![Diagram](images/Code.png){.img-responsive .center-block}
+![Diagram](images/FrontMatter.png){.img-responsive .center-block}
 :::
 :::col-md-6
-## Interactive Code Blocks
+## Step 2: Customize the Output
 
-The tool uses [Roslyn](https://github.com/dotnet/roslyn) to parse and analyze
-source code. Syntactic and semantic information provided by Roslyn is used for 
-syntax-highlighting and for adding cross-references and type information in
-code snippets. You can jump to the definition of a symbol by clicking it, or 
-inspect its type by hovering over it.
+You can generate either raw markdown files or standalone web sites. Using themes 
+and styles you can customize the appearance of the pages. Include a [YAML](http://yaml.org/) 
+front matter in your source files to pass parameters to the site generator.
 :::
 ::::::
 
 ::::::row
 :::col-md-6
-## Easy Navigation
+## Step 3: Add Table of Contents
 
-Navigation panes are added automatically to help find a specific topic. Table 
-of Contents file outlines the structure of the documentation. TOC file can be 
-automatically generated and updated. The outputted web pages will show the TOC
-in a sidebar as well as navigation buttons that jump to the previous and next
-section.
+A table of contents file defines the structure of your documentation. A TOC 
+file can be automatically generated and updated. The outputted web pages 
+include a navigation pane and navigation buttons to jump from one page to 
+another.
 :::
 :::col-md-6
 ![Diagram](images/Navigation.png){.img-responsive .center-block}
+:::
+::::::
+
+::::::row
+:::col-md-6
+![Diagram](images/Code.png){.img-responsive .center-block}
+:::
+:::col-md-6
+## Step 4: Generate the Documentation
+
+The documentation "weaver" uses [Roslyn](https://github.com/dotnet/roslyn) to 
+parse and analyze your source code. Syntactic and semantic information provided 
+by Roslyn is used for syntax-highlighting, and for adding cross-references and 
+type information to the code blocks. You can jump to the definition of a symbol 
+by clicking it, or inspect its type by hovering over it.
+:::
+::::::
+
+::::::row
+:::col-md-6
+## Step 5: Publish Your Docs
+
+If your code resides under GitHub, you can publish it under 
+[GitHub Pages](https://pages.github.com/) by turning on a single option in the 
+project settings. Just generate your documentation under the `docs` folder,
+and turn it on. Done!
+:::
+:::col-md-6
+![Diagram](images/GitHubPages.png){.img-responsive .center-block}
 :::
 ::::::
 
