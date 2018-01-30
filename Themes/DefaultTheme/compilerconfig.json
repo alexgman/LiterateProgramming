@@ -1,9 +1,5 @@
 ﻿[
   {
-    "outputFile": "bootstrap/css/bootstrap.css",
-    "inputFile": "bootstrap/less/bootstrap.less"
-  },
-  {
     "outputFile": "sidebar/sidebar.css",
     "inputFile": "sidebar/sidebar.less"
   },

@@ -5,7 +5,8 @@ GitHub: https://github.com/johtela/LiterateProgramming
 Download: https://github.com/johtela/LiterateProgramming/releases
 License: License.html
 Footer: "Copyright © 2017 Tommi Johtela"
-ShowDescriptionsInToc: true
+ShowDescriptionsInToc: false
+BootstrapStyle: readable
 MarkdownStyle: book
 SyntaxHighlight: solarized-light
 UseDiagrams: true

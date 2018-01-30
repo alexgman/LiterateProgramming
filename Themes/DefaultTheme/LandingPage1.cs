@@ -53,7 +53,14 @@ namespace DefaultTheme
             
             #line default
             #line hidden
-            this.Write("bootstrap/css/bootstrap.min.css\" />\r\n<link rel=\"stylesheet\" href=\"");
+            this.Write("bootstrap/css/");
+            
+            #line 5 "C:\Users\johteto\Source\Repos\LiterateProgramming\Themes\DefaultTheme\_include\LandingStyles.tt"
+            this.Write(this.ToStringHelper.ToStringWithCulture(Params["bootstrapstyle", "default"]));
+            
+            #line default
+            #line hidden
+            this.Write("/bootstrap.min.css\" />\r\n<link rel=\"stylesheet\" href=\"");
             
             #line 6 "C:\Users\johteto\Source\Repos\LiterateProgramming\Themes\DefaultTheme\_include\LandingStyles.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(Params.Root));
@@ -276,14 +283,16 @@ if (Params[lc] != lc)
             #line default
             #line hidden
             this.Write("\r\n\t</div>\r\n\r\n    ");
-            this.Write("\r\n    <footer class=\"panel-footer text-center\">\r\n        <p>");
+            this.Write("\r\n    <footer class=\"panel-footer text-center\">\r\n        <div align=\"center\">");
             
             #line 7 "C:\Users\johteto\Source\Repos\LiterateProgramming\Themes\DefaultTheme\_include/Footer.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(Params["footer"]));
             
             #line default
             #line hidden
-            this.Write("</p>\r\n    </footer>\r\n");
+            this.Write("</div>\r\n\t\t<div align=\"right\">\r\n\t\t\t<small>\r\n\t\t\t\tDocumentation created with <a href" +
+                    "=\"https://johtela.github.io/LiterateProgramming/\">Literate Programming</a>.\r\n\t\t\t" +
+                    "</small>\r\n\t\t</div>\r\n    </footer>\r\n");
             this.Write("\r\n\r\n    ");
             this.Write("\r\n    <script src=\"");
             

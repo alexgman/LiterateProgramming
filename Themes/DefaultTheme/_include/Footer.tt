@@ -4,5 +4,10 @@
 <#@ import namespace="System.Collections.Generic" #>
 
     <footer class="panel-footer text-center">
-        <p><#= Params["footer"] #></p>
+        <div align="center"><#= Params["footer"] #></div>
+		<div align="right">
+			<small>
+				Documentation created with <a href="https://johtela.github.io/LiterateProgramming/">Literate Programming</a>.
+			</small>
+		</div>
     </footer>

@@ -1,5 +1,6 @@
-@import (reference) "../bootstrap/less/variables.less";
-@import (reference) "../bootstrap/less/mixins/border-radius.less";
+@text-color: #456;
+@highlight-bg-color: #000;
+@highlight-color: #fff;
 
 .main-menu {
     ul {
@@ -14,19 +15,17 @@
         padding-bottom: 3px;
         padding-top: 3px;
         display: block;
-        color: @link-hover-color;
+        color: @text-color;
         text-decoration: none;
-        .border-top-radius(@list-group-border-radius);
-        .border-bottom-radius(@list-group-border-radius);
         &:hover, &.selected {
         	padding-left: 5px;
-            background-color: @link-hover-color;
-            color: @body-bg;
+            background-color: @text-color;
+            color: @highlight-color;
         }
         &:active {
         	padding-left: 5px;
-            background-color: @link-color;
-            color: @body-bg;
+            background-color: @highlight-bg-color;
+            color: @highlight-color;
         }
     }
 }
