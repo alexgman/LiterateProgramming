@@ -12,7 +12,7 @@ Wizard of computer science. Its guiding principle is that computer programs shou
 like a book or an essay. Knuth argues that programmers should not focus just on writing code, 
 they should also document the thought processes that led them to the chosen implementation; 
 not only describing _what_ the code does, but _why_. This clearly helps other programmers 
-understand the code better, but also the author will find  it easier to revisit the code 
+understand the code better, but also the author will find it easier to revise the code 
 later on.
 
 Back in the 80s when Knuth first introduced his idea, he wrote a set of tools to manage code
@@ -44,10 +44,10 @@ to be proficient in two traits instead of just one. Writing fluent prose can be 
 good code - and equally time consuming as well. Nevertheless, the benefits of having both working 
 software and comprehensive documentation can sometimes outweigh the costs. Especially, when writing 
 software whose inner workings need to be understood by others; such as libraries, tutorials, 
-example programs, and so on. The documentation can be presented in various shapes and forms. It can 
-be anything from a blog post to a complete book. In fact, there are quite popular recently published 
-books that have been written as literate programs; for example the 
-[Physically Based Rendering](http://www.pbrt.org/) book.
+example programs, and so on. Additional benefit is that the documentation can be produced in various 
+shapes and forms: as a PDF, blog post, presentation, website, or even as a complete book. In fact, 
+there are quite popular recently published books that have been written as literate programs; for 
+example the [Physically Based Rendering](http://www.pbrt.org/) book.
 
 In .NET languages the standard way of documenting code is to write XML comments. API documentation
 generated from XML comments serves as a reference manual that can be used to quickly find what a 
