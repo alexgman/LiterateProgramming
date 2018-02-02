@@ -8,7 +8,7 @@
 
 [Literate programming](https://en.wikipedia.org/wiki/Literate_programming) is a software design 
 methodology proposed by [Donald Knuth](https://en.wikipedia.org/wiki/Donald_Knuth), one of the 
-grand minds of computer science. Its guiding principle is that computer programs should be 
+great men in computer science. Its guiding principle is that computer programs should be 
 written like a book or an essay. Knuth argues that programmers should not focus just on writing 
 code, they should also document the thought processes that led them to the chosen implementation; 
 not only describing _what_ the code does, but _why_. This clearly helps other programmers 
