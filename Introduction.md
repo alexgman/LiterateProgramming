@@ -1,4 +1,4 @@
-﻿# Literate Programming Makes Documenting C# Code Enjoyable
+﻿# Literate Programming and the Art of Documenting C# Code
 
 > Let us change our traditional attitude to the construction of programs: Instead of imagining that 
 > our main task is to instruct a computer what to do, let us concentrate rather on explaining to human 
@@ -7,10 +7,10 @@
 > _Donald Knuth, Computer Journal, 1984_
 
 [Literate programming](https://en.wikipedia.org/wiki/Literate_programming) is a software design 
-methodology proposed by [Donald Knuth](https://en.wikipedia.org/wiki/Donald_Knuth), the Grand 
-Wizard of computer science. Its guiding principle is that computer programs should be written 
-like a book or an essay. Knuth argues that programmers should not focus just on writing code, 
-they should also document the thought processes that led them to the chosen implementation; 
+methodology proposed by [Donald Knuth](https://en.wikipedia.org/wiki/Donald_Knuth), one of the 
+grand minds of computer science. Its guiding principle is that computer programs should be 
+written like a book or an essay. Knuth argues that programmers should not focus just on writing 
+code, they should also document the thought processes that led them to the chosen implementation; 
 not only describing _what_ the code does, but _why_. This clearly helps other programmers 
 understand the code better, but also the author will find it easier to revise the code 
 later on.
@@ -20,7 +20,7 @@ and documentation together. These tools take a file containing text and code int
 produce the source code to be compiled, as well as the "documentation source" that can be converted 
 to a readable format. They are basically preprocessors which operate on the same source file, 
 extracting different parts from it. Knuth called this source language `WEB`, hence the tools 
-were called "Weave" and "Tangle". Weave produces the documentation in 
+were called _Weave_ and _Tangle_. Weave produces the documentation in 
 [_TeX_](https://en.wikipedia.org/wiki/TeX) format and Tangle produces compilable code. The 
 concept is depicted in the picture below.
 
