@@ -29,6 +29,9 @@
 }
 .markdown p {
   margin: 1em;
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
   hyphens: auto;
 }
 .markdown img {
@@ -132,6 +135,7 @@
   list-style: circle;
 }
 .markdown li {
+  padding-left: 8px;
   margin-bottom: 8px;
 }
 .markdown li p:last-child {
