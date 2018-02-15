@@ -28,7 +28,7 @@
   outline: 0;
 }
 .markdown p {
-  margin: 1em;
+  margin: 8px;
   -ms-hyphens: auto;
   -moz-hyphens: auto;
   -webkit-hyphens: auto;
@@ -88,7 +88,7 @@
 .markdown pre {
   font-family: 'Roboto Mono', monospace;
   background-color: transparent;
-  font-size: 0.95em;
+  font-size: 100%;
   tab-size: 4;
   overflow-x: auto;
   overflow-y: hidden;
@@ -128,7 +128,7 @@
 }
 .markdown ul,
 .markdown ol {
-  margin: 1em 0;
+  margin: 8px 0;
   padding: 0 3em 0 3em;
 }
 .markdown ul {
