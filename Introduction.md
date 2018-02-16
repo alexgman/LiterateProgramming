@@ -7,13 +7,12 @@
 > _Donald Knuth, Computer Journal, 1984_
 
 [Literate programming](https://en.wikipedia.org/wiki/Literate_programming) is a software design 
-methodology proposed by [Donald Knuth](https://en.wikipedia.org/wiki/Donald_Knuth), one of the 
-great men in computer science. Its guiding principle is that computer programs should be 
-written like a book or an essay. Knuth argues that programmers should not focus just on writing 
-code, they should also document the thought processes that led them to the chosen implementation; 
-not only describing _what_ the code does, but _why_. This clearly helps other programmers 
-understand the code better, but also the author will find it easier to revise the code 
-later on.
+methodology proposed by [Donald Knuth](https://en.wikipedia.org/wiki/Donald_Knuth). Its guiding 
+principle is that computer programs should be written like a book or an essay. Knuth argues that 
+good programmers do not focus just on writing code, they also document the thought processes 
+that led them to the chosen implementation; describing not only _what_ the code does, but _why_. 
+This helps other programmers understand the code better, but also the author will find it easier 
+to revise the code later on.
 
 Back in the 80s when Knuth first introduced his idea, he wrote a set of tools to manage code
 and documentation together. These tools take a file containing text and code interleaved and 
@@ -43,10 +42,10 @@ Another reason for literate programming's lack of popularity is that it requires
 to be proficient in two traits instead of just one. Writing fluent prose can be as hard as writing 
 good code - and equally time consuming as well. Nevertheless, the benefits of having both working 
 software and comprehensive documentation can sometimes outweigh the costs. Especially, when writing 
-software whose inner workings need to be understood by others; such as libraries, tutorials, 
-example programs, and so on. Additional benefit is that the documentation can be produced in various 
-shapes and forms: as a PDF, blog post, presentation, website, or even as a complete book. In fact, 
-there are quite popular recently published books that have been written as literate programs; for 
+software whose inner workings need to be understood by others: libraries, tutorials, example 
+programs, and so on. Additional benefit is that the documentation can be produced in various 
+formats: as a PDF, blog post, presentation, website, or even as a complete book. In fact, 
+there are quite popular recently published books that have been written as literate programs, for 
 example the [Physically Based Rendering](http://www.pbrt.org/) book.
 
 In .NET languages the standard way of documenting code is to write XML comments. API documentation
@@ -59,7 +58,7 @@ through the documentation. There is little additional information in the XML com
 
 ## `csweave` - Literate Programming Tool for C#
 
-To make literate programming a viable option also for the C# developers, I wrote a tool 
+To make literate programming a viable option also for C# developers, I wrote a tool 
 called `csweave`. The documentation you are reading right now is generated from its source 
 code. `csweave` parses C# source files and extracts text from comment blocks written in 
 [markdown language](https://en.wikipedia.org/wiki/markdown). The idea is that you will 

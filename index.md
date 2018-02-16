@@ -17,10 +17,10 @@ _Jumbotron: >
 
     Produce beautiful, interactive documentation for your C# projects using
     [literate programming](https://en.wikipedia.org/wiki/Literate_programming). 
-    Write your documentation inside code comments using 
+    Write your documentation inside comments using 
     [markdown](https://en.wikipedia.org/wiki/Markdown) 
     and compile it to a fully functional web site that can be published on 
-    [GitHub](https://github.com) in a jiffy.
+    [GitHub](https://github.com).
 ---
 
 ::::::row
@@ -46,7 +46,7 @@ markdown to HTML. It offers a lot of useful extensions from
 :::col-md-6
 ## Step 2: Customize the Output
 
-You can generate either raw markdown files or standalone web sites. Using themes 
+Generate either raw markdown files or standalone web sites. Using themes 
 and styles you can customize the appearance of the pages. Include a [YAML](http://yaml.org/) 
 front matter in your source files to pass parameters to the site generator.
 :::
