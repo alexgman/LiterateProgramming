@@ -96,6 +96,24 @@ a button in the toolbar.
 
 The text shown in the footer of the HTML pages.
 
+### `BootstrapStyle` (string)
+
+The name of the stylesheet used with the Bootstrap library. The available 
+styles in the default theme are (click a style to see its preview):
+* [cerulean](https://bootswatch.com/3/cerulean/)
+* [cosmo](https://bootswatch.com/3/cosmo/)
+* [default](https://bootswatch.com/3/default/) - Default style.
+* [flatly](https://bootswatch.com/3/flatly/)
+* [journal](https://bootswatch.com/3/journal/)
+* [lumen](https://bootswatch.com/3/lumen/)
+* [paper](https://bootswatch.com/3/paper/)
+* [readable](https://bootswatch.com/3/readable/)
+* [sandstone](https://bootswatch.com/3/sandstone/)
+* [simplex](https://bootswatch.com/3/simplex/)
+* [spacelab](https://bootswatch.com/3/spacelab/)
+* [united](https://bootswatch.com/3/united/)
+* [yeti](https://bootswatch.com/3/yeti/)
+
 ### `MarkdownStyle` (string)
 
 The name of the CSS style sheet that is used for markdown formatting. 
